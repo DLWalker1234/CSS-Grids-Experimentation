@@ -12,6 +12,15 @@
     background-color: red;
 }
 
+.title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* 
+    SAME RESULT
+    grid-column: 1 / 3
+    */
+}
+
 .grid div:nth-child(odd) {
     background-color: green;
 }
