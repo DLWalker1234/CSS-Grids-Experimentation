@@ -6,6 +6,8 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: "title title" "header header" "sidebar content" "footer footer";
 }
 
 .grid div:nth-child(even) {
@@ -15,7 +17,7 @@
 .title {
     grid-area: title;
 
-    
+
     /* 
     grid-column-start: 1;
     grid-column-end: 3;
