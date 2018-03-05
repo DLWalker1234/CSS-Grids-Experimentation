@@ -13,12 +13,34 @@
 }
 
 .title {
+    grid-area: title;
+
+    
+    /* 
     grid-column-start: 1;
     grid-column-end: 3;
-    /* 
+    ------------------
     SAME RESULT
     grid-column: 1 / 3
+    ------------------
+    grid-column-end: span 2;
     */
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
 }
 
 .grid div:nth-child(odd) {
