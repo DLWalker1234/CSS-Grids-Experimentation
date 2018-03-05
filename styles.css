@@ -7,7 +7,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    grid-template-areas: "title title" "header header" "sidebar content" "footer footer";
+    grid-template-areas: "title title"
+                         "header header"
+                         "sidebar sidebar"
+                         "content content" 
+                         "footer footer";
+    grid-gap: 10px;
 }
 
 .grid div:nth-child(even) {
@@ -39,6 +44,7 @@
 
 .content {
     grid-area: content;
+    display: grid;
 }
 
 .footer {
@@ -47,4 +53,16 @@
 
 .grid div:nth-child(odd) {
     background-color: green;
+}
+
+@media screen and (min-width: 736px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        grid-template-areas: ". title title ."
+                             ". header header ."
+                             ". sidebar content ." 
+                             ". footer footer .";
+    }
 }
